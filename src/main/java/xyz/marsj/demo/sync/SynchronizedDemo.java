@@ -30,6 +30,7 @@ public class SynchronizedDemo {
         SynchronizedDemo sync1=new SynchronizedDemo();
         SynchronizedDemo sync2=new SynchronizedDemo();
         ExecutorService service= Executors.newCachedThreadPool();
+
         service.execute(()->{
             sync1.test1();
         });
